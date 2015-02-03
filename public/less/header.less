@@ -1,13 +1,21 @@
 @import "variables";
-
-.top-nav {
-  font-size: @font-size-small;
-  height: @height-nav-top;
+header{
   background-color: @bgc-nav-top;
+}
+.top-nav {
+  font-size: @font-size-md;
+  height: @height-nav-top;
+  line-height: @height-nav-top;
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
   a {
     color: @comm-link-color;
   }
   a:hover {
     color: @comm-link-hover-color;
+  }
+  @media (min-width:640px) {
+    
   }
 }
