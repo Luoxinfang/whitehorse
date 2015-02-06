@@ -1,0 +1,49 @@
+@import "public";
+
+body {
+  background-position: 50% 0;
+  background-repeat: repeat-y;
+  background-image: url("../imgs/bg/reg_bg.jpg");
+}
+
+.reg-panel {
+  margin: 100px auto;
+  height: 485px;
+  max-width: 900px;
+  vertical-align: middle;
+
+  .nav {
+    height: 24px;
+    text-align: right;
+  }
+
+  a {
+    color: @comm-link-color;
+  }
+}
+
+#wrapper {
+  display: inline-block;
+  border-left: 200px solid #d4c376;
+  position: relative;
+  vertical-align: bottom;
+}
+
+#sidebar {
+  float: left;
+  width: 200px;
+  margin-left: -200px;
+  margin-right: -1px;
+  border-right: 1px solid #888;
+  position: relative;
+}
+
+#main {
+  float: left;
+  border-left: 1px solid #888;
+}
+
+#maing,
+#sidebar {
+  padding-bottom: 2em;
+}

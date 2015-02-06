@@ -14,3 +14,9 @@ ul li {
   list-style: none;
   display: inline-block;
 }
+.them-link {
+  color: #0acc99;
+}
+.comm-link {
+  color: #ffffff;
+}

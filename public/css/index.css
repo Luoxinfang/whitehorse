@@ -14,20 +14,24 @@ ul li {
   list-style: none;
   display: inline-block;
 }
+.them-link {
+  color: #0acc99;
+}
+.comm-link {
+  color: #ffffff;
+}
 header {
-  background-color: #0ac896;
+  background-color: #0acc99;
 }
 .top-nav {
   font-size: 14px;
   height: 50px;
   line-height: 50px;
   width: 100%;
-  max-width: 1000px;
   margin: auto;
+  max-width: 1000px;
+  text-align: right;
 }
 .top-nav a {
   color: #ffffff;
-}
-.top-nav a:hover {
-  color: #c6c6c6;
 }

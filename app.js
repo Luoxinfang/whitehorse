@@ -36,7 +36,12 @@ http.createServer(app).listen(app.get('port'), function () {
 });
 
 app.get('/', function (req, res) {
-  res.sendfile('index.html');
+  //默认是返回index的
+
+});
+
+app.get('/reg', function (req, res) {
+  res.sendfile(__dirname +'/public/tpl/reg.html', {}, null);
 });
 
 app.use(express.logger('dev'));
