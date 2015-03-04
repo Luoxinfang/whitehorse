@@ -1,4 +1,6 @@
+
 @import "public";
+@import "form";
 
 body {
   background-position: 50% 0;
@@ -8,7 +10,8 @@ body {
 
 .reg-panel {
   margin: 100px auto;
-  height: 485px;
+  height: 685px;
+  width: 80%;
   max-width: 900px;
   vertical-align: middle;
 
@@ -20,30 +23,26 @@ body {
   a {
     color: @comm-link-color;
   }
+
+  .sidebar {
+    float: left;
+    width: 20%;
+    height: 200px;
+  }
+
+  .main {
+    float: left;
+    height: 320px;
+    margin-left: @dis-md;
+    vertical-align: bottom;
+    padding: 0 @dis-md*3;
+    background: #f7f7f7;
+    border-radius: 4px;
+
+  }
+
+  .main, .sidebar {
+    padding-bottom: 2em;
+  }
 }
 
-#wrapper {
-  display: inline-block;
-  border-left: 200px solid #d4c376;
-  position: relative;
-  vertical-align: bottom;
-}
-
-#sidebar {
-  float: left;
-  width: 200px;
-  margin-left: -200px;
-  margin-right: -1px;
-  border-right: 1px solid #888;
-  position: relative;
-}
-
-#main {
-  float: left;
-  border-left: 1px solid #888;
-}
-
-#maing,
-#sidebar {
-  padding-bottom: 2em;
-}

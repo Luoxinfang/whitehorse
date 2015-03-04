@@ -1,0 +1,9 @@
+Somgle
+
+
+
+
+
+
+database:
+	mysql

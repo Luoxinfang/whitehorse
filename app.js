@@ -4,14 +4,14 @@
 var express = require('express');
 var http = require('http');
 var path = require('path');
-
+var routes = require('./routes');
 
 var app = express();
 // all environments
 app.set('env', 'development'); //production
 app.set('port', process.env.PORT || 3000, null);
 app.set('views', path.join(__dirname, 'views'), null);
-
+app.set('view engine', 'ejs', null);
 app.use(express.favicon('public/imgs/icon/somgle.ico'));
 app.use(express.json());
 app.use(express.urlencoded());
@@ -35,13 +35,6 @@ http.createServer(app).listen(app.get('port'), function () {
   console.log(info);
 });
 
-app.get('/', function (req, res) {
-  //默认是返回index的
-
-});
-
-app.get('/reg', function (req, res) {
-  res.sendfile(__dirname +'/public/tpl/reg.html', {}, null);
-});
+routes(app);
 
 app.use(express.logger('dev'));

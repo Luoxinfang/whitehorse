@@ -14,6 +14,23 @@ ul li {
   list-style: none;
   display: inline-block;
 }
+input {
+  display: block;
+}
+.logo {
+  max-width: 100%;
+  height: 160px;
+  border: none;
+  vertical-align: middle;
+  background: url("../imgs/pub/logo.jpg") no-repeat;
+  background-size: contain;
+}
+.box-shadow {
+  -webkit-box-shadow: 0 1px 7px rgba(46, 46, 46, 0.3);
+  -ms-box-shadow: 0 1px 7px rgba(46, 46, 46, 0.3);
+  -o-box-shadow: 0 1px 7px rgba(46, 46, 46, 0.3);
+  box-shadow: 0 1px 7px rgba(46, 46, 46, 0.3);
+}
 .them-link {
   color: #0acc99;
 }

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<base href="/">
+	<title><%=app.title%>-分享品味 点亮高贵</title>
+	<link rel="stylesheet" href="/css/index.css"/>
+</head>
+<body ng-app="somgle">
+<%=include inc/header.html%>
+<div ng-view=""></div>
+<%=include inc/footer.html%>
+<script src="/js/lib/angular.js"></script>
+<script src="/js/app.js"></script>
+</body>
+</html>

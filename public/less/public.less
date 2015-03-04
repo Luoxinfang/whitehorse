@@ -1,5 +1,6 @@
 
 @import "variables";
+@import "mixins";
 body {
   margin: 0px;
   padding: 0;
@@ -18,9 +19,23 @@ ul li {
   list-style: none;
   display: inline-block;
 }
-.logo{
-  
+
+input{
+  display: block;
 }
+
+.logo{
+  max-width: 100%;
+  height: 160px;
+  border: none;
+  vertical-align: middle;
+  background: url("../imgs/pub/logo.jpg") no-repeat;
+  background-size: contain;
+}
+.box-shadow {
+  .box-shadow();
+}
+
 .them-link{
   color: @them-link-color;
 }
