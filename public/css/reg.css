@@ -37,6 +37,15 @@ input {
 .comm-link {
   color: #ffffff;
 }
+button {
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+.btn-primary {
+  border: solid 1px transparent;
+  background: #0acc99;
+  color: #ffffff;
+}
 .form-group {
   margin-bottom: 1em;
 }
@@ -77,7 +86,7 @@ body {
 }
 .reg-panel .main {
   float: left;
-  height: 320px;
+  height: 420px;
   margin-left: 10px;
   vertical-align: bottom;
   padding: 0 30px;
@@ -87,4 +96,8 @@ body {
 .reg-panel .main,
 .reg-panel .sidebar {
   padding-bottom: 2em;
+}
+.by-email,
+.co-agent {
+  float: left;
 }

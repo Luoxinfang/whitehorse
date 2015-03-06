@@ -3,7 +3,6 @@
  */
 define(['angular'],function (require, exports, module) {
 
-
   var user = angular.module('user');
 
   user.controller();
