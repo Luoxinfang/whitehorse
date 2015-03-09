@@ -14,6 +14,9 @@ ul li {
   list-style: none;
   display: inline-block;
 }
+label {
+  display: inline-block;
+}
 input {
   display: block;
 }
@@ -37,8 +40,26 @@ input {
 .comm-link {
   color: #ffffff;
 }
+*[class^='icon'] {
+  background-image: url("../imgs/icon/backgrounds.32.png");
+}
 .icon-email {
-  background-color: #0acc99;
+  margin-top: 12px;
+  width: 12px;
+  height: 12px;
+  background-position: -571px -51px;
+}
+.icon-pwd {
+  margin-top: 10px;
+  width: 12px;
+  height: 16px;
+  background-position: -571px -17px;
+}
+.icon-nick-name {
+  margin-top: 10px;
+  width: 12px;
+  height: 12px;
+  background-position: -571px -68px;
 }
 .btn {
   padding: 5px 15px;
@@ -57,14 +78,43 @@ input {
 }
 .form-group label {
   display: inline-block;
-  margin-bottom: .5em;
-  font-weight: 700;
 }
 .form-group input {
-  padding: .5em;
-  font-size: 1em;
+  font-size: .9em;
   line-height: 1.2em;
   border: 1px solid #cccccc;
+}
+.form-group .ipt-md {
+  width: 90px;
+  padding: 7.5px;
+}
+.form-group.icon label {
+  position: absolute;
+  margin-left: 5px;
+}
+.form-control {
+  width: 165px;
+  padding: 7.5px 7.5px 7.5px 22.5px;
+}
+[class^="ipt"]:focus,
+.form-control:focus {
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+.form-control::-moz-placeholder {
+  color: #d7d7d7;
+  opacity: 1;
+}
+.form-control:-ms-input-placeholder {
+  color: #d7d7d7;
+}
+.form-control::-webkit-input-placeholder {
+  color: #d7d7d7;
+}
+.agree-me {
+  font-size: .8em;
 }
 body {
   background-position: 50% 0;
@@ -83,7 +133,7 @@ body {
   text-align: right;
 }
 .reg-panel a {
-  color: #ffffff;
+  color: #0acc99;
 }
 .reg-panel .sidebar {
   float: left;
@@ -103,7 +153,15 @@ body {
 .reg-panel .sidebar {
   padding-bottom: 2em;
 }
+.reg-form {
+  padding-right: 50px;
+  width: 230px;
+}
 .by-email,
 .co-agent {
+  float: left;
+}
+#reg-agree-me {
+  display: inline-block;
   float: left;
 }

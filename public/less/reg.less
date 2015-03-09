@@ -1,5 +1,5 @@
 @import "public";
-@import "icon";
+@import "icons";
 @import "form";
 
 body {
@@ -21,7 +21,7 @@ body {
   }
 
   a {
-    color: @comm-link-color;
+    color: @them-link-color;
   }
 
   .sidebar {
@@ -46,7 +46,17 @@ body {
   }
 }
 
-.by-email,.co-agent {
+.reg-form {
+  padding-right: @dis-sm*10;
+  width: @dis-md*23;
+}
+
+.by-email, .co-agent {
+  float: left;
+}
+
+#reg-agree-me {
+  display: inline-block;
   float: left;
 }
 

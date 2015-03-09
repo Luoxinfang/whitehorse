@@ -14,6 +14,9 @@ ul li {
   list-style: none;
   display: inline-block;
 }
+label {
+  display: inline-block;
+}
 input {
   display: block;
 }
