@@ -22,7 +22,7 @@ input {
   height: 160px;
   border: none;
   vertical-align: middle;
-  background: url("../imgs/pub/logo.jpg") no-repeat;
+  background: url("../imgs/pub/logo.png") no-repeat;
   background-size: contain;
 }
 .box-shadow {
@@ -37,9 +37,15 @@ input {
 .comm-link {
   color: #ffffff;
 }
-button {
-  padding: 5px 10px;
+.icon-email {
+  background-color: #0acc99;
+}
+.btn {
+  padding: 5px 15px;
   border-radius: 4px;
+}
+.btn.lg {
+  padding: 10px 30px;
 }
 .btn-primary {
   border: solid 1px transparent;
@@ -47,7 +53,7 @@ button {
   color: #ffffff;
 }
 .form-group {
-  margin-bottom: 1em;
+  margin-bottom: .4em;
 }
 .form-group label {
   display: inline-block;

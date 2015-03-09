@@ -2,7 +2,7 @@
  * Created by roy on 15-2-5.
  */
 require.config({
-  baseUrl: 'js/',
+  baseUrl: '/js/',
 
   //路径配置
   paths: {

@@ -1,18 +1,22 @@
 @import "variables";
 
-button {
-  padding: @dis-sm @dis-md;
+.btn {
+  padding: @dis-sm @dis-lg;
   border-radius: 4px;
 }
 
-.btn-primary{
+.btn.lg {
+  padding: @dis-sm*2 @dis-lg*2;
+}
+
+.btn-primary {
   border: solid 1px transparent;
   background: @bgc-nav-top;
   color: @comm-link-color;
 }
 
 .form-group {
-  margin-bottom: 1em;
+  margin-bottom: .4em;
 
   label {
     display: inline-block;
