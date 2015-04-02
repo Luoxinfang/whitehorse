@@ -25,3 +25,4 @@ $.fn.writer = function (interval) {
   });
   return this;
 };
+
