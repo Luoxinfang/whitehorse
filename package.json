@@ -15,6 +15,7 @@
     "less":"*",
     "less-plugin-clean-css":"",
     "grunt-contrib-clean": "*",
+    "grunt-contrib-concat": "*",
     "grunt-contrib-copy": "*",
     "grunt-contrib-htmlmin": "*",
     "grunt-contrib-cssmin": "*",

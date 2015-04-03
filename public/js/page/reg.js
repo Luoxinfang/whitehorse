@@ -1,14 +1,22 @@
 /**
  * Created by roy on 15-3-5.
  */
-require(['jquery', 'angular', 'app'], function (jquery, angular, app) {
+require(['jquery', 'angular', 'roy', 'app'], function (jquery, angular, roy, app) {
   "use strict";
   app.controller('regController', function ($scope) {
+    this.user = {};
 
-    var user = {email: '', nickName: '', password: ''};
     //验证邮箱的合法性
-    this.verifyEmail = function (val) {
-      alert(val);
+    this.verifyEmail = function () {
+      var email = this.user.email;
+      var rs = roy.verify.isEmail(email);
+      if(email){
+        if(!rs){
+          this.user.emailMsg = '邮箱格式不正确';
+        }
+      }else{
+        this.user.emailMsg = '邮箱不能为空';
+      }
     };
     $scope.processData = function () {
       alert(1);

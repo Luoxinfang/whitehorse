@@ -6,13 +6,14 @@ require.config({
 
   //路径配置
   paths: {
-    jquery:'lib/jquery',
-    angular: 'lib/angular'
+    jquery: 'lib/jquery',
+    angular: 'lib/angular',
+    roy: 'lib/roy'
   },
   //这个配置是你在引入依赖的时候的包名
   shim: {
-    angular:{
-      deps:['jquery'],
+    angular: {
+      deps: ['jquery'],
       exports: 'angular'
     }
   }
