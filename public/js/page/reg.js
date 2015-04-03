@@ -8,7 +8,7 @@ require(['jquery', 'angular', 'roy', 'app'], function (jquery, angular, roy, app
 
     //验证邮箱的合法性
     this.verifyEmail = function () {
-      var email = this.user.email;
+      var email = $scope.email;
       var rs = roy.verify.isEmail(email);
       if(email){
         if(!rs){
