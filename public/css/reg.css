@@ -25,10 +25,15 @@ input {
   height: 160px;
   border: none;
   vertical-align: middle;
-  background: url("../imgs/pub/logo.png") no-repeat;
+  background: url("../img/pub/logo.png") no-repeat;
   background-size: contain;
 }
+.hide {
+  display: none;
+}
 .tip {
+  padding: 5px;
+  font-size: .5em;
   color: #ff0000;
 }
 .box-shadow {
@@ -44,25 +49,22 @@ input {
   color: #ffffff;
 }
 *[class^='icon'] {
-  background-image: url("../imgs/icon/backgrounds.32.png");
+  background-image: url("../img/bg/backgrounds.32.png?max_age=19830212&d=20150327164410");
 }
 .icon-email {
-  margin-top: 12px;
   width: 12px;
-  height: 12px;
-  background-position: -571px -51px;
+  height: 11px;
+  background-position: -610px 0;
 }
 .icon-pwd {
-  margin-top: 10px;
   width: 12px;
   height: 16px;
-  background-position: -571px -17px;
+  background-position: -593px -102px;
 }
 .icon-nick-name {
-  margin-top: 10px;
   width: 12px;
   height: 12px;
-  background-position: -571px -68px;
+  background-position: -610px -17px;
 }
 .btn {
   padding: 5px 15px;
@@ -77,12 +79,18 @@ input {
   color: #ffffff;
 }
 .form-group {
-  margin-bottom: .4em;
+  margin-bottom: 1em;
 }
 .form-group label {
   display: inline-block;
+  position: absolute;
+  margin-left: .5em;
+  margin-top: .6em;
+  cursor: pointer;
 }
-.form-group input {
+.form-group input,
+.form-group select {
+  padding: .5em .5em .5em 2em;
   font-size: .9em;
   line-height: 1.2em;
   border: 1px solid #cccccc;
@@ -122,7 +130,7 @@ input {
 body {
   background-position: 50% 0;
   background-repeat: repeat-y;
-  background-image: url("../imgs/bg/reg_bg.jpg");
+  background-image: url("../img/bg/reg_bg.jpg");
 }
 .reg-panel {
   margin: 100px auto;
@@ -136,7 +144,7 @@ body {
   text-align: right;
 }
 .reg-panel a {
-  color: #0acc99;
+  color: #ffffff;
 }
 .reg-panel .sidebar {
   float: left;

@@ -14,9 +14,6 @@ module.exports = function(grunt) {
       }
     }
   });
-
   grunt.loadNpmTasks('grunt-contrib-concat');
-  grunt.registerTask('concat-roy',['concat:roy']);
-
-
+  grunt.registerTask('concat-roy',['concat:roy'])
 };

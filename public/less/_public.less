@@ -1,8 +1,12 @@
+
+@import "_variables";
+@import "_mixins";
 body {
   margin: 0px;
   padding: 0;
   font-family: tahoma, arial, \5FAE\8F6F\96C5\9ED1, \5B8B\4F53, serif;
 }
+
 a {
   text-decoration: none;
 }
@@ -10,36 +14,45 @@ ul {
   margin: 0;
   padding: 0;
 }
+
 ul li {
   list-style: none;
   display: inline-block;
 }
+
 label {
   display: inline-block;
 }
-input {
+
+input{
   display: block;
 }
-.logo {
+
+.logo{
   max-width: 100%;
   height: 160px;
   border: none;
   vertical-align: middle;
-  background: url("../imgs/pub/logo.png") no-repeat;
+  background: url("../img/pub/logo.png") no-repeat;
   background-size: contain;
 }
-.tip {
-  color: #ff0000;
+.hide {
+  display: none;
 }
+.tip{
+  padding: @dis-sm;
+  font-size: .5em;
+  color: @warn-color;
+}
+
+
 .box-shadow {
-  -webkit-box-shadow: 0 1px 7px rgba(46, 46, 46, 0.3);
-  -ms-box-shadow: 0 1px 7px rgba(46, 46, 46, 0.3);
-  -o-box-shadow: 0 1px 7px rgba(46, 46, 46, 0.3);
-  box-shadow: 0 1px 7px rgba(46, 46, 46, 0.3);
+  .box-shadow();
 }
-.them-link {
-  color: #0acc99;
+
+.them-link{
+  color: @them-link-color;
 }
 .comm-link {
-  color: #ffffff;
+  color: @comm-link-color;
 }

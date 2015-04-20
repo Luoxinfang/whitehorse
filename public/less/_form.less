@@ -1,4 +1,4 @@
-@import "variables";
+@import "_variables";
 
 .btn {
   padding: @dis-sm @dis-lg;
@@ -16,48 +16,58 @@
 }
 
 .form-group {
-  margin-bottom: .4em;
+  margin-bottom: 1em;
 
   label {
     display: inline-block;
+    position: absolute;
+    margin-left: .5em;
+    margin-top: .6em;
+    cursor: pointer;
   }
-  input {
+  input, select {
+    padding: .5em .5em .5em 2em;
     font-size: .9em;
     line-height: 1.2em;
     border: @grey-border-sm;
   }
-  .ipt-md{
+  .ipt-md {
     width: @dis-lg*6;
     padding: @dis-sm*1.5;
   }
 }
-.form-group.icon label{
+
+.form-group.icon label {
   position: absolute;
   margin-left: @dis-sm;
 }
 
-.form-control{
+.form-control {
   width: @dis-lg*11;
   padding: @dis-sm*1.5 @dis-sm*1.5 @dis-sm*1.5 @dis-lg*1.5;
 }
 
-[class^="ipt"]:focus,.form-control:focus {
+[class^="ipt"]:focus, .form-control:focus {
   border-color: #66afe9;
   outline: 0;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
-  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
 }
+
 .form-control::-moz-placeholder {
   color: @comm-color;
   opacity: 1;
 }
+
 .form-control:-ms-input-placeholder {
   color: @comm-color;
 }
+
 .form-control::-webkit-input-placeholder {
   color: @comm-color;
 }
-.agree-me{
 
+.agree-me {
   font-size: .8em;
 }
+

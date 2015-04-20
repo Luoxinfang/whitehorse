@@ -25,10 +25,15 @@ input {
   height: 160px;
   border: none;
   vertical-align: middle;
-  background: url("../imgs/pub/logo.png") no-repeat;
+  background: url("../img/pub/logo.png") no-repeat;
   background-size: contain;
 }
+.hide {
+  display: none;
+}
 .tip {
+  padding: 5px;
+  font-size: .5em;
   color: #ff0000;
 }
 .box-shadow {
