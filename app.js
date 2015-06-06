@@ -8,8 +8,8 @@ var routes = require('./routes');
 
 var app = express();
 
-app.set('env', 'production'); //production
-app.set('port', process.env.PORT || 3000, null);
+app.set('env', 'development'); //production |
+app.set('port', process.env.PORT || 80, null);
 app.set('views', path.join(__dirname, 'views'), null);
 app.set('view engine', 'ejs', null);
 app.use(express.favicon('public/img/icon/somgle.ico'));
